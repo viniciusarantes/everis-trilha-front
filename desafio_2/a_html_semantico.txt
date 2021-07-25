@@ -1,0 +1,5 @@
+O HTML semântico auxilia o desenvolvedor na implementação facilitando o uso das tags. 
+Geralmente, o nome das tags indica o comportamento que o elemento terá na tela.
+Quanto maior a implementação de uma página HTML, mais complexo pode ser para identificar
+os elementos, mas seguindo a semântica nas tags, torna-se fácil de identificar
+cada parte da página e torna-se sugestiva a implementação da mesma.
