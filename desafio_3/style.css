@@ -1,0 +1,23 @@
+table, tr, td {
+    border: 1px solid white;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+}
+
+.row > div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.black {
+    background-color: black;
+}
+
+.gray {
+    background-color: lightgray;
+}
