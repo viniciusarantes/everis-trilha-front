@@ -33,18 +33,11 @@
     display: none;
 }
 
-.active {
-    display: block !important;
-}
 
 @media (max-width: 550px) {
 
     .items {
         flex-direction: column;
-    }
-
-    .item-menu {
-        display: none;
     }
 
     .button-menu {

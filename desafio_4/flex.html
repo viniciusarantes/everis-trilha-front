@@ -37,13 +37,21 @@
     $(document).ready(function () {
         $("img").click(function () {
             const items_menu = $(".item.item-menu");
-            console.log(items_menu);
-            if (items_menu.hasClass('active')) {
-                items_menu.removeClass('active');
+            if (items_menu.is(":visible")) {
+                items_menu.hide();
             } else {
-                items_menu.addClass('active');
+                items_menu.show();
             }
         })
+    });
+
+    $(window).resize(function () {
+        const items_menu = $(".item.item-menu");
+        if ($(document).innerWidth() < 550) {
+            items_menu.hide();
+        } else {
+            items_menu.show();
+        }
     });
 </script>
 </html>
