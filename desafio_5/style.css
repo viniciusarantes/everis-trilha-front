@@ -1,0 +1,66 @@
+.container {
+    margin: 5px;
+    display: grid;
+    grid: 
+        "header header" auto
+        "nav nav" auto
+        "section aside" 200px
+        "footer footer" auto
+        / 6fr 2fr;
+}
+
+.card {
+	margin: 5px;
+    padding: 8px 16px;
+	background: lightgray;
+}
+
+.list {
+    background-color: #197dd4;
+}
+
+nav.list > ul {
+    padding: 0;
+}
+
+nav.list > ul > li {
+    list-style-type: none;
+    padding: 3px 0;
+}
+
+nav.list > ul > li > a {
+    color: #fff;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section {
+    grid-area: section;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        grid: 
+        "header" auto
+        "nav" auto
+        "section" 200px
+        "aside" auto
+        "footer" auto
+        / 1fr;
+    }
+}
