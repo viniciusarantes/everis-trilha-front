@@ -3,12 +3,12 @@ html {
 }
 
 .container {
-    margin: 25px;
+    margin: 15px;
     display: grid;
     grid: 
         "nav nav" auto
         "section aside" auto
-        / 1fr 2fr
+        / 2fr 3fr
 }
 
 .navbar {
@@ -35,7 +35,8 @@ html {
 
 .item {
     flex: 1;
-    margin: 10px 5px;
+    margin: 5px 4px;
+    white-space: nowrap;
 }
 
 .logo{
@@ -46,6 +47,10 @@ html {
     color: #b3b3b3;
     margin: 18px 0;   
     text-decoration: none;
+}
+
+.link:hover {
+    font-weight: 600;
 }
 
 .title {
@@ -63,6 +68,7 @@ html {
     font-weight: bold;
     border-radius: 10px;
     color: #3d4c77;
+    border: 2px solid #3d4c77;
     box-shadow: 0 4px #3d4c77;
     cursor: pointer;
 }
@@ -83,14 +89,16 @@ html {
 
 form {
     margin-top: 20px;
-    width: 250px;
+    margin-bottom: 50px;
+    min-width: 250px;
+    max-width: 350px;
 }
 
 .form-input {
     padding: 8px;
     border-radius: 7px;
-    border: 2px solid #c4c9d3;
-    color: #c4c9d3;
+    border: 2px solid #afb3bb;
+    color: #afb3bb;
     font-family: inherit;
     width: 100%;
     box-sizing: border-box;
@@ -98,7 +106,7 @@ form {
 
 
 .form-input::placeholder {
-    color: #c4c9d3;
+    color: #afb3bb;
     opacity: 1;
 }
 
@@ -159,11 +167,6 @@ aside > img {
         align-items: flex-end;
     }
 
-    form {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
     .button-menu {
         display: block;
         margin: 10px 15px;
@@ -175,6 +178,10 @@ aside > img {
             "nav" auto
             "section" auto
             "aside" auto
+    }
+
+    form {
+        max-width: 100%;
     }
 
     .row {
