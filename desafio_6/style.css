@@ -12,21 +12,18 @@ html {
 }
 
 .navbar {
-	margin: 0 auto;
 	display: flex;
-    flex-direction: row;
 }
 
 .column-1 {
-	margin: 5px;
-	font-size: 1em;
+	margin: 0;
     flex-grow: 1;
 }
 
 .column-2 {
 	margin: 5px;
 	font-size: 1em;
-    flex-grow: 2;
+    flex-grow: 3;
     display: flex;
 }
 
@@ -90,19 +87,25 @@ form {
 }
 
 .form-input {
-    padding: 8px 0;
+    padding: 8px;
     border-radius: 7px;
     border: 2px solid #c4c9d3;
     color: #c4c9d3;
     font-family: inherit;
     width: 100%;
+    box-sizing: border-box;
 }
 
 
 .form-input::placeholder {
-    padding: 8px;
     color: #c4c9d3;
     opacity: 1;
+}
+
+.form-input:focus-visible {
+    outline: none;
+    border:1px solid #dab6d6;
+    box-shadow: 0 0 5px #dab6d6;
 }
 
 .button-menu {
@@ -120,8 +123,8 @@ form {
 
 .col {
     flex: 1;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 textarea.form-input {
@@ -184,5 +187,10 @@ aside > img {
 
     .col {
         margin: 8px 0;
+        text-align: center;
+    }
+
+    .btn-send {
+        padding: 12px 60px;
     }
 }
