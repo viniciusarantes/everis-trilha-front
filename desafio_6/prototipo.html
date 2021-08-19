@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio 6 - Contact US</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body class="container">
+
+    <nav class="navbar">
+        <div class="column-1">
+            <div class="item">
+                <a href="#">
+                    <img class="logo" src="assets/logo.jpg" alt="logo"/>
+                </a>
+            </div>
+            
+        </div>
+        <div class="column-2 items">
+            <div class="button-menu">
+                <img src="https://img.icons8.com/android/24/000000/menu.png"/>
+            </div>
+            <div class="item item-menu">
+                <a href="#" class="link">Home</a>
+            </div>
+            <div class="item item-menu">
+                <a href="#" class="link">Products</a>
+            </div>
+            <div class="item item-menu">
+                <a href="#" class="link">Download</a>
+            </div>
+            <div class="item item-menu">
+                <a href="#" class="link">Store</a>
+            </div>
+            <div class="item item-menu">
+                <a href="#" class="link">Contact Us</a>
+            </div>
+            <div class="item item-menu">
+                <button class="btn">Log In</button>
+            </div>
+        </div>
+
+    </nav>
+
+    <section>
+        <div>
+            <h1 class="title"><strong>Questions?</strong></h1>
+            <h1 class="title"><i>Contact us :)</i></h1>
+        </div>
+        <div>
+            <form action="#">
+                <div class="row">
+                    <div class="col"><input class="form-input" placeholder="Name" name="name"/></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input class="form-input" placeholder="Email" name="email"/></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input class="form-input" placeholder="Subject" name="subject"/></div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <textarea class="form-input" placeholder="Message" rows="3" name="message"></textarea>
+                    </div>
+                </div>
+                
+                <button class="btn btn-send">Send</button>
+            </form>
+        </div>
+
+    </section>
+
+    <aside>
+        <img src="assets/background-image.jpg"/>
+    </aside>
+    
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $("img").click(function () {
+            const items_menu = $(".item.item-menu");
+            if (items_menu.is(":visible")) {
+                items_menu.hide();
+            } else {
+                items_menu.show();
+            }
+        })
+    });
+
+    $(window).resize(function () {
+        const items_menu = $(".item.item-menu");
+        if ($(document).innerWidth() < 600) {
+            items_menu.hide();
+        } else {
+            items_menu.show();
+        }
+    });
+</script>
+</html>
