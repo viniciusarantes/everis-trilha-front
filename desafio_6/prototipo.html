@@ -20,7 +20,7 @@
         </div>
         <div class="column-2 items">
             <div class="button-menu">
-                <img src="https://img.icons8.com/android/24/000000/menu.png"/>
+                <img class="menu" src="https://img.icons8.com/android/24/000000/menu.png"/>
             </div>
             <div class="item item-menu">
                 <a href="#" class="link">Home</a>
@@ -51,18 +51,19 @@
         </div>
         <div>
             <form action="#">
-                <div class="row">
+                <div class="row row-flex">
                     <div class="col"><input class="form-input" placeholder="Name" name="name"/></div>
-                </div>
-                <div class="row">
                     <div class="col"><input class="form-input" placeholder="Email" name="email"/></div>
                 </div>
+                <!-- <div class="row">
+                    <div class="col"><input class="form-input" placeholder="Email" name="email"/></div>
+                </div> -->
                 <div class="row">
                     <div class="col"><input class="form-input" placeholder="Subject" name="subject"/></div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <textarea class="form-input" placeholder="Message" rows="3" name="message"></textarea>
+                        <textarea class="form-input" placeholder="Message" rows="4" name="message"></textarea>
                     </div>
                 </div>
                 
@@ -84,7 +85,7 @@
   crossorigin="anonymous"></script>
 <script>
     $(document).ready(function () {
-        $("img").click(function () {
+        $("img.menu").click(function () {
             const items_menu = $(".item.item-menu");
             if (items_menu.is(":visible")) {
                 items_menu.hide();

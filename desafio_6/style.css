@@ -90,7 +90,7 @@ form {
 }
 
 .form-input {
-    padding: 8px;
+    padding: 8px 0;
     border-radius: 7px;
     border: 2px solid #c4c9d3;
     color: #c4c9d3;
@@ -100,6 +100,7 @@ form {
 
 
 .form-input::placeholder {
+    padding: 8px;
     color: #c4c9d3;
     opacity: 1;
 }
@@ -114,12 +115,18 @@ form {
 
 .row-flex {
     display: flex;
+    flex-direction: row;
 }
 
 .col {
     flex: 1;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+textarea.form-input {
+    max-width: 100%;
+    resize: none;
 }
 
 nav {
@@ -165,5 +172,17 @@ aside > img {
             "nav" auto
             "section" auto
             "aside" auto
+    }
+
+    .row {
+        margin: 0
+    }
+
+    .row-flex {
+        display: block;
+    }
+
+    .col {
+        margin: 8px 0;
     }
 }
